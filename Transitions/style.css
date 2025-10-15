@@ -1,12 +1,12 @@
 .main{
     width: 1300px;
     height: 800px;
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     align-items: center;
+    background-color: lightgrey;
 }
 body{
     display: flex;
@@ -17,7 +17,7 @@ body{
 .container{
     height: 350px;
     width: 300px;
-    border: 2px solid red;
+    
     position: relative;
     display: flex;
     justify-content: center;
@@ -31,15 +31,23 @@ img{
 p{
     position: absolute;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     opacity: 0;
+}
+.type{
+    bottom: 20px;
+    font-size: 20px;
+}
+.genre{
+    bottom: 0px;
+    font-size: 15px;
 }
 .container:hover img{
     opacity: 0;
 }
 .container:hover {
-    background-color: lightgray;
+    background-color: darkslategrey;
 }
 .container:hover p{
     opacity: 1;
